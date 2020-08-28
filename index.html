@@ -1,0 +1,131 @@
+<!-- HTML 注释-->
+<!-- 1. 标签  - 承载内容-->
+<!-- 2. 层叠样示表  - 渲染页面-->
+<!-- 3. JavaScript  - 交互式行为-->
+
+<!DOCTYPE html>      				<!--声明使用的是HTML5规范-->
+<html>
+	<head>
+		<meta charset="utf-8">   	<!--设定字符-->
+		<title>骆明的技术专栏</title><!--标题-->
+		<!-- css - cascading style sheet 层叠样式表-->
+		<style type="text/css">
+			/*指定对应标签的渲染规则: 紫色，字体大小2cm*/
+			h1 {
+				color: purple;     		/*字体颜色*/
+				font-size: 2cm;			/*字体大小   cm：厘米  px：像素*/
+				font-family: "等线";   	/*字体类型*/
+			}
+			p {
+				color: black;
+				font-size: 2cm;
+				font-family: "宋体";
+			}
+			p: first-letter{
+				font-size: 4cm;
+				color: blue;
+			}	
+			.a {
+				color: green;
+			}
+			.b {
+				color: red;
+			}
+			a {   /*对所有a标签进行渲染设置*/
+				color: red;   /* 颜色变为红色*/
+				text-decoration: none;   /*取消下划线*/
+			}
+			a:hover{    /*鼠标悬停的渲染*/
+				color:green;    /*鼠标悬停变为绿色*/
+			}
+		</style>
+	</head>
+	<body>
+		<a name='shit'></a>   <!-- 利用a标签设置锚点 -->
+		<p>
+			<a href="#shit2">去底部</a>
+		</p>
+		<img src="1111.jpg" >
+		<h1>&lt;jackfrued&gt;的博客 - H <sub>2</sub></h1>  		<!--一级标题-->
+		<hr>						<!--水平分割线-->
+		床前明月光 <br> 				<!--换行-->
+		疑似地下霜 <br>
+		举头望明月 <br>
+		低头思故乡 <br>
+		<hr>  
+		
+		<h2>水果</h2>
+		<ol>   <!-- 有序列表 -->
+			<li>香蕉</li>   <!-- <li></li>列表项 -->
+			<li>橘子</li>
+			<li>橙子</li>
+		</ol>
+
+
+		<ul>   <!-- 无序列表 -->    
+			<!-- <a href=""></a>  
+			1. 超链接 默认或者加属性 target="_self" 在当前页面打开   加入属性target="_blank" 表示重新打开一个窗口加载该页面
+			2. 锚点链接
+			3. 功能链接
+			-->
+			<li><a href="https://www.baidu.com" target="_self">百度</a></li>
+			<li><a href="https://www.jd.com" target="_blank">京东</a></li>
+			<li> 
+				<ol>视频网站     <!-- 列表嵌套 -->
+					<li>腾讯</li>
+					<li>爱奇艺</li>
+					<li><a href="https://www.youku.com">优酷</a></li>
+					<li><a href="hello.html">自己的页面</a></li>
+					<!-- hello.html#foo 加载另外一个网址的锚点 -->
+					<li><a href="hello.html#foo">去那个网址的那个位置</a></li>
+				
+				</ol>
+			</li>
+		</ul>
+
+		<dl>   <!-- 定义列表 -->
+			<dt><a href="https://python.org" target="_blank"><img src="https://www.python.org/static/img/python-logo.png" ></a></dt>
+			<dd>
+				<dl>
+					<dt>面向对象的编程语言</dt>
+					<dd>基本概念:类、对象</dd>
+				</dl>
+			</dd>
+			<dd>动态弱类型语言，需要Pyhton解释器才能执行</dd>
+		</dl>
+
+		 <!-- &nbsp;:空格  <del>xxx</del>删除线   <sup>1</sup> 上角标-->
+		<p class="a">床&nbsp;&nbsp;&nbsp;&nbsp;前<del>明月光</del><sup>1</sup></p>		<!--段落标签  段与段之间还有空格-->
+		<!-- <ins>疑似</ins>:下划线   &copy;版权标志 -->
+		<p class="b"><ins>疑似</ins>地下霜&copy;</p>
+		<!-- &trade;:商标    <strong>明月</strong>: 加粗   <sup>2</sup>:上角标-->
+		<p>举头&trade;望	<strong>明月</strong><sup>2</sup></p>
+		<!-- <em>思</em>:斜体 -->
+		<p>低头 <strong><em>思</em></strong>故乡</p>
+		<button onclick="showWriter()">确定</button>
+		<button onclick="shutDown()">关闭</button>
+		<p>
+			<a href="#shit">回顶部</a>
+			<a href="mailto:736704198@qq.com">给站长发邮件</a>   
+			<a href="tencent://message/?uin=313050362&Site=sc.chinaz.com&Menu=yes">tencent咨询</a>  
+		</p>
+		<a name='shit2'></a>     <!-- 利用a标签设置锚点 -->
+		<script type="text/javascript">
+			// 驼峰命名法 
+			function shutDown(){
+				if (window.confirm('确定要关闭吗？'))
+				{
+					window.close()
+				}
+			}
+			function showWriter() {
+				window.alert('作者:李白');
+			}
+		</script>		
+	</body>
+</html>
+
+
+
+
+
