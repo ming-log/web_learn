@@ -14,10 +14,11 @@
 		height: 100px;
 		font-size: 200%;
 		text-align: center;
-		position: fixed; /* 位置 */
+		position: fixed; /* 固定位置 */
 		top:50px;
 		right: 50px;
 	}
+
 	.p1{
 		position: static; /*静态定位 */
 		left:50px;  /* 右移50个像素 */
@@ -40,7 +41,7 @@
 	}
 	.p4{
 		position: fixed; /* 固定定位 */
-		/* 相对于浏览器窗口进行拜放，在浏览器的固定位置 */
+		/* 相对于浏览器窗口进行摆放，在浏览器的固定位置 */
 		left:50px;
 		top:20px;
 		font-size: 50px;
@@ -51,11 +52,14 @@
 	h1 {
 		float: right;
 	}
+	#close {
+		float: right;
+	}
 </style>
 <body>
 	<div class="ad">
 		广告位
-		<button type="button" style="float:right;">close</button>
+		<button type="button" id = "close">close</button>
 	</div>
 	<div>
 		<h1>hello,world!</h1>
