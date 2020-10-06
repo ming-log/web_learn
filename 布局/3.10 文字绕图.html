@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>文字绕图</title>
+	</head>
+	<style type="text/css">
+		.box{
+			margin: 50px auto 0;
+			width: 500px;
+			border: 1px solid #666666;
+		}
+		
+		.img{
+			margin: 20px;
+			width: 100px;
+			height: 100px;
+			background-color: #000;
+			float: left;
+		}
+	</style>
+	<body>
+		<div class="box">
+			<div class="img"></div>
+			<div style="margin:20px; ">1、浮动元素有左浮动(float:left)和右浮动(float:right)两种<br>
+2、浮动的元素会向左或向右浮动，碰到父元素边界、其他元素才停下来<br>
+3、相邻浮动的块元素可以并在一行，超出父级宽度就换行<br>
+4、浮动让行内元素或块元素自动转化为行内块元素(此时不会有行内块元素间隙问题)<br>
+<b>5、浮动元素后面没有浮动的元素会占据浮动元素的位置，没有浮动的元素内的文字会避开浮动的元素，形成文字饶图的效果</b><br>	
+6、父元素如果没有设置尺寸(一般是高度不设置)，父元素内整体浮动的元素无法撑开父元素，父元素需要清除浮动<br>
+7、浮动元素之间没有垂直margin的合并</div>
+		</div>
+	</body>
+</html>
